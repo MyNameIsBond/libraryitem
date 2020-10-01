@@ -7,15 +7,51 @@
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+struct LibraryContent: LibraryContentProvider {
+    @LibraryContentBuilder
+    func modifiers(base: Image) -> [LibraryItem] {
+        LibraryItem(
+            base.imgAvatar(width: 50, height: 50),
+            title: "Avatar Circular image"
+        )
     }
 }
+
+extension Image {
+    func imgAvatar(width: CGFloat, height: CGFloat) -> some View {
+        self
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .frame(width: width, height: width)
+            .clipShape(Circle())
+            
+    }
+}
+
+
+
+
+
+struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            List(messages) { user in
+                ChatRow(user: user)
+                    
+            }.listStyle(PlainListStyle())
+            .navigationBarTitle("Messages")
+            .navigationBarItems(leading:EditButton(), trailing: Image("user").imgAvatar(width: 30, height: 30))
+            
+            
+        }
+    }
+}
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+

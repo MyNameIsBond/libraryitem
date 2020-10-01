@@ -13,6 +13,8 @@
 		EA30CC712523F5AF005A9EDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA30CC702523F5AF005A9EDB /* Preview Assets.xcassets */; };
 		EA30CC7C2523F5AF005A9EDB /* LibraryItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30CC7B2523F5AF005A9EDB /* LibraryItemTests.swift */; };
 		EA30CC872523F5AF005A9EDB /* LibraryItemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA30CC862523F5AF005A9EDB /* LibraryItemUITests.swift */; };
+		EA539E1B2524310A0045F3D3 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA539E1A2524310A0045F3D3 /* Messages.swift */; };
+		EAAD876325247F6500EE7EC2 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAD876225247F6500EE7EC2 /* ChatRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,8 @@
 		EA30CC822523F5AF005A9EDB /* LibraryItemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LibraryItemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA30CC862523F5AF005A9EDB /* LibraryItemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryItemUITests.swift; sourceTree = "<group>"; };
 		EA30CC882523F5AF005A9EDB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA539E1A2524310A0045F3D3 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		EAAD876225247F6500EE7EC2 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				EA30CC6D2523F5AF005A9EDB /* Assets.xcassets */,
 				EA30CC722523F5AF005A9EDB /* Info.plist */,
 				EA30CC6F2523F5AF005A9EDB /* Preview Content */,
+				EA539E1A2524310A0045F3D3 /* Messages.swift */,
+				EAAD876225247F6500EE7EC2 /* ChatRow.swift */,
 			);
 			path = LibraryItem;
 			sourceTree = "<group>";
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAAD876325247F6500EE7EC2 /* ChatRow.swift in Sources */,
 				EA30CC6C2523F5AD005A9EDB /* ContentView.swift in Sources */,
+				EA539E1B2524310A0045F3D3 /* Messages.swift in Sources */,
 				EA30CC6A2523F5AD005A9EDB /* LibraryItemApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
