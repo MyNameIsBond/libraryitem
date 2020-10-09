@@ -14,9 +14,6 @@ struct LibraryContent: LibraryContentProvider {
             base.imgAvatar(width: 50, height: 50),
             title: "Avatar Circular Image"
         )
-    @LibraryContentBuilder
-    func
-    }
 }
 
 extension Image {
