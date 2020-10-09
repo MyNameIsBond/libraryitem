@@ -8,21 +8,26 @@
 import SwiftUI
 
 struct ChatRow: View {
-    let user: Messages
+    
+    var photo: String
+    var name: String
+    var message: String
+    var time: String
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
-                Image(user.photo).imgAvatar(width: 50, height: 50)
+                Image(photo).imgAvatar(width: 50, height: 50)
                 VStack(alignment: .leading) {
-                    Text(user.name)
+                    Text(name)
                         .font(.headline)
-                    Text(user.message)
+                    Text(message)
                         .font(.subheadline)
                         .foregroundColor(Color.gray)
                         .lineLimit(1)
                 }
                 Spacer()
-                Text(user.time)
+                Text(time)
                     .font(.caption)
                     .foregroundColor(Color.gray)
                 
@@ -34,7 +39,7 @@ struct ChatRow: View {
 struct ChatRow_Previews: PreviewProvider {
     static var previews: some View {
         Group {
-            ChatRow(user: Messages(name: "James", photo: "user1", message: "Hello", time: "20:20"))
+            ChatRow(photo: "user1", name: "James", message: "Hello", time: "20:20")
         }
     }
 }

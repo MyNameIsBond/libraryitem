@@ -14,6 +14,8 @@ struct LibraryContent: LibraryContentProvider {
             base.imgAvatar(width: 50, height: 50),
             title: "Avatar Circular Image"
         )
+    @LibraryContentBuilder
+    func
     }
 }
 
@@ -32,11 +34,14 @@ extension Image {
 
 
 
+
+
 struct ContentView: View {
+    
     var body: some View {
         NavigationView {
             List(messages) { user in
-                ChatRow(user: user)
+                ChatRow(photo: user.photo,name: user.name,message: user.message, time: user.time)
                     
             }.listStyle(PlainListStyle())
             .navigationBarTitle("Messages")
