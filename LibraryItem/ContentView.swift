@@ -1,9 +1,3 @@
-//
-//  ContentView.swift
-//  LibraryItem
-//
-//  Created by Tony Hajdini on 30/09/2020.
-//
 
 import SwiftUI
 
