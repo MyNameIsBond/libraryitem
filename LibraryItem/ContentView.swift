@@ -29,8 +29,6 @@ extension Image {
 
 
 struct ContentView: View {
-    
-    
     var body: some View {
         NavigationView {
             List(messages) { user in
