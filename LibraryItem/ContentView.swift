@@ -6,7 +6,7 @@ struct LibraryContent: LibraryContentProvider {
     func modifiers(base: Image) -> [LibraryItem] {
         LibraryItem(
             base.imgAvatar(width: 50, height: 50),
-            title: "Avadtar Circular Imagee"
+            title: "Avadtar Circular Image"
         )
     }
 }
@@ -18,8 +18,6 @@ extension Image {
             .aspectRatio(contentMode: .fill)
             .frame(width: width, height: width)
             .clipShape(Circle())
-            
-        
     }
 }
 
