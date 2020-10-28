@@ -6,8 +6,16 @@ struct LibraryContent: LibraryContentProvider {
     func modifiers(base: Image) -> [LibraryItem] {
         LibraryItem(
             base.imgAvatar(width: 50, height: 50),
-            title: "Avadtar Circular Image",
+            title: "Avatar Circular Image",
             category: .control
+        )
+    }
+    
+    @LibraryContentBuilder
+    func chat() -> [LibraryItem] {
+        LibraryItem(
+            ChatRow(photo: "user1", name: "James", message: "Hello", time: "20:20"),
+            title: "Chat Row"
         )
     }
 }
