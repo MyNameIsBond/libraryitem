@@ -10,14 +10,6 @@ struct LibraryContent: LibraryContentProvider {
             category: .control
         )
     }
-    
-    @LibraryContentBuilder
-    func chat() -> [LibraryItem] {
-        LibraryItem(
-            ChatRow(photo: "user1", name: "James", message: "Hello", time: "20:20"),
-            title: "Chat Row"
-        )
-    }
 }
 
 extension Image {
@@ -29,12 +21,6 @@ extension Image {
             .clipShape(Circle())
     }
 }
-
-
-
-
-
-
 
 struct ContentView: View {
     var body: some View {
