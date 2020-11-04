@@ -12,7 +12,7 @@ struct LB: LibraryContentProvider {
     @LibraryContentBuilder
     var views: [LibraryItem] {
         LibraryItem(
-            ChatRow(photo: "user1", name: "James", message: "Hello", time: "20:20"),
+            ChatRow(photo: "user1", name: "James", message: "Hello", time: "20:200"),
             title: "Chat Row",
             category: .control
         )
