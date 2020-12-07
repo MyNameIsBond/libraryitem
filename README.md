@@ -1,7 +1,7 @@
 
 <h1>Custom Library View and Modifier in SwiftUI</h1>
 
-![alt text](https://thehappyprogrammer.com/wp-content/uploads/2020/11/Screenshot-2020-11-07-at-03.37.20-519x1024.png?raw=true)
+![alt text](https://i0.wp.com/thehappyprogrammer.com/wp-content/uploads/2020/11/library-1.png?ssl=1?raw=true)
 
 <h3>This Repository is a tutorial on how to add custom library items on Xcode library</h3>
 
